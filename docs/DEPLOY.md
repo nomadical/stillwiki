@@ -1,4 +1,4 @@
-# Deploy md-kb (Fly.io + Supabase Cloud)
+# Deploy stillwiki (Fly.io + Supabase Cloud)
 
 The app is one Docker image (the Express server serves the built SPA **and** the
 `/api/*` endpoints). State lives in a Supabase project. This guide deploys a

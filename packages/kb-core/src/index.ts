@@ -1,4 +1,4 @@
-// @md-kb/core — framework-agnostic, dependency-free shared model for the
+// @stillwiki/core — framework-agnostic, dependency-free shared model for the
 // knowledge base. Single source of truth for the read-only article shape and
 // design tokens consumed by the app. No React, no MUI, no Supabase here.
 

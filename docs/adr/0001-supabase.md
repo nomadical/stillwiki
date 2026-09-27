@@ -4,7 +4,7 @@
 
 ## Context
 
-md-kb's defining feature is **role-based article visibility**: some content is
+stillwiki's defining feature is **role-based article visibility**: some content is
 public, some is gated to users holding specific entitlement roles. Getting that
 right is a security problem, not just a UI one — the boundary has to hold even
 when the application has a bug.

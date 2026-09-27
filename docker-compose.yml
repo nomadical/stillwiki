@@ -1,4 +1,4 @@
-# One-command run of the md-kb app container against a Supabase you already have
+# One-command run of the stillwiki app container against a Supabase you already have
 # (Supabase Cloud, or a local `supabase start`). Copy .env.example to .env, fill
 # it in, then:
 #

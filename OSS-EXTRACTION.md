@@ -36,7 +36,7 @@ optional).
 sign-up becomes admin; configure the rest in Admin → Settings.
 
 ## Milestone 6 — scope rename ✅
-- [x] `@skycell-ag/kb-core` → `@md-kb/core` (package, imports, build scripts).
+- [x] `@skycell-ag/kb-core` → `@stillwiki/core` (package, imports, build scripts).
 - [x] Removed the `kb-react` embed package (unused by the app; pulled a private
       `@skycell-ag/scd-lib`) and its Dockerfile/CI references.
 

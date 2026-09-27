@@ -1,5 +1,5 @@
 {
-  "name": "md-kb",
+  "name": "stillwiki",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "setup": "node scripts/setup.mjs",
-    "build:packages": "npm run build -w @md-kb/core",
+    "build:packages": "npm run build -w @stillwiki/core",
     "predev": "npm run build:packages",
     "dev": "vite",
     "prebuild": "npm run build:packages",
@@ -26,7 +26,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@md-kb/core": "*",
+    "@stillwiki/core": "*",
     "@modelcontextprotocol/sdk": "1.29.0",
     "@supabase/ssr": "0.10.3",
     "@supabase/supabase-js": "2.107.0",

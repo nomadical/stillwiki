@@ -1,8 +1,8 @@
 {
-  "name": "@md-kb/core",
+  "name": "@stillwiki/core",
   "version": "0.1.0",
   "private": true,
-  "description": "Framework-agnostic shared model and design tokens for the md-kb knowledge base.",
+  "description": "Framework-agnostic shared model and design tokens for the stillwiki knowledge base.",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

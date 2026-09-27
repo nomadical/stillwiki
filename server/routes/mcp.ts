@@ -27,7 +27,7 @@ const normFolder = (folder: string): string =>
     .join("/");
 
 function buildServer(): McpServer {
-  const server = new McpServer({ name: "md-kb", version: "1.0.0" });
+  const server = new McpServer({ name: "stillwiki", version: "1.0.0" });
 
   server.tool(
     "search_kb_articles",
