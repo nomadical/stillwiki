@@ -1,4 +1,4 @@
-# Fly.io config for the md-kb demo. Rename `app` and set a region, then:
+# Fly.io config for the stillwiki demo. Rename `app` and set a region, then:
 #   fly launch --no-deploy            # (or `fly apps create <name>`)
 #   fly deploy \
 #     --build-arg VITE_SUPABASE_URL=https://YOUR.supabase.co \
@@ -6,7 +6,7 @@
 #     --build-arg VITE_SITE_URL=https://YOUR-APP.fly.dev
 #   fly secrets set SUPABASE_SERVICE_ROLE_KEY=...   # server-only
 # See docs/DEPLOY.md for the full walkthrough.
-app = "md-kb-demo"
+app = "stillwiki-demo"
 primary_region = "iad"
 
 [build]

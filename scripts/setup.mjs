@@ -16,7 +16,7 @@ const has = (bin) => {
 };
 const log = (m) => console.log(m);
 
-log("\n▶  md-kb setup\n");
+log("\n▶  stillwiki setup\n");
 
 // 1. .env.local
 if (!existsSync(".env.local")) {

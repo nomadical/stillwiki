@@ -1,4 +1,4 @@
-# Contributing to md-kb
+# Contributing to stillwiki
 
 Thanks for helping out! 🙌
 

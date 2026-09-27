@@ -1,5 +1,5 @@
 -- ============================================================================
--- md-kb : sample content
+-- stillwiki : sample content
 -- Run AFTER schema.sql. Idempotent — re-running won't duplicate rows.
 --   Supabase SQL editor, or: supabase db execute < supabase/seed.sql
 -- ============================================================================
@@ -7,8 +7,8 @@
 insert into public.articles (slug, title, folder, tags, published, content) values
 
 -- ---------------------------------------------------------------------------
-('welcome', 'Welcome To md-kb', '', '{getting-started}', true, $md$
-# Welcome to md-kb 👋
+('welcome', 'Welcome To Stillwiki', '', '{getting-started}', true, $md$
+# Welcome to stillwiki 👋
 
 This is a tiny, self-hostable **markdown knowledge base**. Anyone can read
 published articles; signed-in editors write them in a split editor with live

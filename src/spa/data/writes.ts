@@ -172,7 +172,7 @@ export async function exportArticles(): Promise<void> {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "md-kb-export.zip";
+  a.download = "stillwiki-export.zip";
   document.body.appendChild(a);
   a.click();
   a.remove();

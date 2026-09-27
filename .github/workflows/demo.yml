@@ -30,7 +30,7 @@ jobs:
         run: npm run build -- --outDir dist-demo
         env:
           VITE_DEMO: "true"
-          VITE_BASE_PATH: /md-kb/
+          VITE_BASE_PATH: /stillwiki/
           VITE_ALLOW_SIGNUP: "false"
       # GitHub Pages has no SPA fallback; serve the app for deep links too.
       - run: cp dist-demo/index.html dist-demo/404.html

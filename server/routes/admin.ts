@@ -500,7 +500,7 @@ r.get("/export", async (req, res) => {
     }
     const buf = await zip.generateAsync({ type: "nodebuffer" });
     res.setHeader("Content-Type", "application/zip");
-    res.setHeader("Content-Disposition", 'attachment; filename="md-kb-export.zip"');
+    res.setHeader("Content-Disposition", 'attachment; filename="stillwiki-export.zip"');
     res.send(buf);
   } catch (e) {
     if (e instanceof HttpError) res.status(e.status).json({ error: e.message });

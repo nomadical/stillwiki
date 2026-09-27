@@ -1,4 +1,4 @@
-# md-kb — Architecture
+# stillwiki — Architecture
 
 The single reference for how the app fits together: the SPA, the thin backend,
 authentication and authorization, search & Ask-the-KB, the MCP connector, and
@@ -6,7 +6,7 @@ how it's deployed. For deep dives see the linked ADRs.
 
 ## Overview
 
-md-kb is a self-hosted, RLS-secured Markdown knowledge base. It serves public
+stillwiki is a self-hosted, RLS-secured Markdown knowledge base. It serves public
 reading (full-text + fuzzy search, optional "Ask the KB") and an editorial
 workspace: per-user private drafts, optional mandatory review, version history,
 trash, an audit log, bulk Markdown import/export, and an admin settings panel.
@@ -21,7 +21,7 @@ Row-Level Security in Postgres is the authorization boundary.
 | --- | --- |
 | `src/` | Vite + React 19 + react-router 7 SPA (Tailwind v4). Reading UI, editor, admin. |
 | `server/` | Thin Express backend: audited editorial writes + secret-bearing endpoints; serves the built SPA in production. |
-| `packages/core` → `@md-kb/core` | Framework-agnostic, dependency-free shared model: the read-only article shape, `ARTICLE_LIST_COLUMNS`, `isPublicArticle`, and design tokens. Single source of truth. |
+| `packages/core` → `@stillwiki/core` | Framework-agnostic, dependency-free shared model: the read-only article shape, `ARTICLE_LIST_COLUMNS`, `isPublicArticle`, and design tokens. Single source of truth. |
 | `supabase/` | Schema-as-code (`schema.sql` first-boot + idempotent `migrations.sql`), `seed.sql`, local `config.toml`. |
 | `scripts/` | `setup.mjs` (one-command local Supabase + env + migrate/seed) and DB helpers. |
 
@@ -30,7 +30,7 @@ Row-Level Security in Postgres is the authorization boundary.
 ```mermaid
 flowchart TB
   subgraph Browser
-    APP["md-kb SPA (Vite/React)"]
+    APP["stillwiki SPA (Vite/React)"]
   end
   subgraph Server["Node container"]
     EXP["Express backend<br/>(serves SPA + /api)"]

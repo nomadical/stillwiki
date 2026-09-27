@@ -17,7 +17,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci --ignore-scripts
-      # Build the workspace packages first so tsc/vitest resolve @md-kb/core
+      # Build the workspace packages first so tsc/vitest resolve @stillwiki/core
       # (its types/build come from packages/kb-core/dist).
       - run: npm run build:packages
       - name: oxlint

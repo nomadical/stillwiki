@@ -1,5 +1,5 @@
 -- ============================================================================
--- md-kb : Supabase schema
+-- stillwiki : Supabase schema
 --   articles + editorial roles (admin/editor/viewer) + entitlement roles
 -- Run this in the Supabase SQL editor (or `supabase db push`).
 -- ============================================================================
@@ -671,7 +671,7 @@ $$;
 --   so German can be published while French is still a draft. Article-level
 --   metadata (slug, folder, tags, access_roles, context_keys) is NOT duplicated;
 --   it stays on the parent article and governs a translation's visibility too.
---   Keep `language` values in sync with LANGUAGE_CODES in @md-kb/core.
+--   Keep `language` values in sync with LANGUAGE_CODES in @stillwiki/core.
 -- ============================================================================
 create table if not exists public.article_translations (
   id           uuid primary key default gen_random_uuid(),
