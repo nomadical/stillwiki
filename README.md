@@ -7,7 +7,7 @@ An open-source, plug-and-play knowledge base built on **Supabase + Vite/React +
 a thin Express API**. Public visitors read published articles; signed-in staff
 write them in an Obsidian-style split editor with live preview. Formerly md-kb.
 
-**[Try the demo →](https://nomadical.github.io/stillwiki/)** It runs entirely in
+**[Try the demo →](https://stillwiki.nomadic.al/)** It runs entirely in
 your browser (signed in as an admin, nothing saved past the tab), built from
 this repo with `VITE_DEMO=true` — see `src/demo/`.
 
